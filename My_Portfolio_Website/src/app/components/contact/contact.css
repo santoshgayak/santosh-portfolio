@@ -25,7 +25,7 @@
         height: max-content;
         margin-top: 2rem;
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 0rem;
         form{
 
@@ -167,6 +167,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.08rem;
+    text-transform: uppercase;
 
     &::before,
     &::after {
@@ -189,6 +190,18 @@
 }
 
 @media (max-width:797px) {
+
+.title p {
+    margin-left: 40px;
+  
+
+    &::before,
+    &::after {
+      
+        width: 40px;
+  
+    }
+}
     .contact{
          .form-container{
             flex-direction: column;

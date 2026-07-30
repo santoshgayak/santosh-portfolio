@@ -3,7 +3,9 @@
     display: block;
     margin: 0 auto;
     height: max-content;
+    position: relative;
 }
+
 
 @media (max-width:1200px) {
     .container{

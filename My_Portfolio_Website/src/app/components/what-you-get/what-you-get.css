@@ -8,42 +8,7 @@
     .left {
         width: min(100%, 900px);
 
-        .title {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-            position: relative;
-
-            p {
-                position: relative;
-                margin: 0;
-                width: max-content;
-                color: var(--text-muted);
-                font-size: 1.2rem;
-                font-weight: 600;
-                letter-spacing: 0.08rem;
-                margin-left: 100px;
-
-                &::before,
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    width: 80px;
-                    height: 2px;
-                    background: linear-gradient(to right, transparent, var(--text-highlight))
-                }
-
-                &::before {
-                    right: calc(100% + 1rem);
-                }
-
-                &::after {
-                    left: calc(100% + 1rem);
-                    transform: rotate(180deg);
-                }
-            }
-        }
+        
 
         h1 {
             margin: 0;
@@ -155,7 +120,42 @@
 }
 
 
+.title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            position: relative;
 
+            p {
+                position: relative;
+                margin: 0;
+                width: max-content;
+                color: var(--text-muted);
+                font-size: 1.2rem;
+                font-weight: 600;
+                letter-spacing: 0.08rem;
+                margin-left: 100px;
+
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    width: 80px;
+                    height: 2px;
+                    background: linear-gradient(to right, transparent, var(--text-highlight))
+                }
+
+                &::before {
+                    right: calc(100% + 1rem);
+                }
+
+                &::after {
+                    left: calc(100% + 1rem);
+                    transform: rotate(180deg);
+                }
+            }
+        }
 @media (max-width:768px) {
 
     .what-you-get {
@@ -191,4 +191,21 @@
             }
         }
     }
+}
+
+@media (max-width:797px) {
+
+.title p {
+    margin-left: 40px;
+  
+
+    &::before,
+    &::after {
+      
+        width: 40px;
+  
+    }
+}
+   
+    
 }

@@ -136,3 +136,21 @@
 
     
 }
+
+
+@media (max-width:797px) {
+
+.title p {
+    margin-left: 40px;
+  
+
+    &::before,
+    &::after {
+      
+        width: 40px;
+  
+    }
+}
+   
+    
+}

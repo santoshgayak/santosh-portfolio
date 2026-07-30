@@ -1,18 +1,19 @@
 .hero {
     width: 100%;
-    min-height: calc(100dvh - 100px);
-    padding: clamp(2rem, 5vw, 4rem) 1rem;
+    padding: clamp(2rem, 4vw, 4rem) 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: clamp(2rem, 5vw, 5rem);
+    gap: clamp(2rem, 4vw, 4rem);
+
 
     .left {
-        width: 70%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.2rem;
+        
 
         .eyebrow {
             display: inline-flex;
@@ -43,7 +44,7 @@
             margin: 0;
             max-width: 700px;
             color: var(--text-main);
-            font-size: clamp(2.8rem, 4vw, 4.5rem);
+            font-size: clamp(2.8rem, 3vw + 1rem, 3.5rem);
             line-height: 1.15;
             letter-spacing: -0.05rem;
 
@@ -172,19 +173,19 @@
 
 
     .right {
-        width:35%;
+        width:40%;
         display:flex;
         justify-content:center;
         align-items:center;
 
 
         img {
-            width:min(100%,550px);
-            display:block;
+            width: clamp(250px, 90%, 550px);
+            height: auto;
+            object-fit: contain;
             border-radius:40px 0 40px 0;
             border:6px solid var(--text-highlight);
-            box-shadow:
-                0 25px 60px rgba(0,0,0,0.18);
+            box-shadow:0 25px 60px rgba(0,0,0,0.7);
             transition:0.4s ease;
 
 
@@ -203,6 +204,7 @@
         flex-direction:column;
         justify-content:center;
         text-align:center;
+        height: 100dvh;
 
 
         .left {
@@ -249,6 +251,7 @@
 
         .right {
             width:90%;
+            display: none;
 
 
             img {
@@ -265,6 +268,7 @@
     .hero {
 
         padding-top:2rem;
+        height: 100dvh;
 
 
         .left {
@@ -279,15 +283,16 @@
 
 
             .stats {
-                flex-direction:column;
                 gap:0.2rem;
              
 
                 .col{
+                    
+                    padding: 0.2rem;
+                    align-items: center;
                     .icon{
                         align-items: center;
                         justify-content: center;
-                        width: 100%;
                     }
                     span {
                         width:80%;
@@ -315,6 +320,69 @@
                 border:none;
                 box-shadow:none;
             }
+        }
+    }
+}
+
+
+@media(max-width:570px){
+
+    .hero {
+
+        padding-top:2rem;
+        height: 100dvh;
+
+
+        .left {
+
+            width:100%;
+
+
+            h1 {
+                font-size:2.5rem;
+
+            }
+
+
+            .stats {
+                gap:0.2rem;
+             
+
+                .col{
+                    
+                    padding: 0.2rem;
+                    align-items: center;
+                    .icon{
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    span {
+                        width:80%;
+                        height:1px;
+                    }
+                    h3{
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+
+                }
+                
+            }
+        }
+
+
+        .right {
+
+            width:100%;
+
+
+            img {
+                border:none;
+                box-shadow:none;
+            }
+            
         }
     }
 }
