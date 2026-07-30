@@ -1,0 +1,92 @@
+/* 1. Theme Configuration */
+:root {
+  /* Brand Accents */
+  --color-primary: #6366f1;       /* Indigo */
+  --color-primary-hover: #4f46e5; /* Deep Indigo */
+  --color-secondary: #0ea5e9;     /* Sky Blue */
+
+  /* Neutrals & Layout */
+  --color-bg: #eeeff3;            /* Slate 900 (Body Background) */
+  --color-surface: #1e293b;       /* Slate 800 (Cards & Containers) */
+  --color-border: #b7b7b9;        /* Slate 700 (Subtle structural lines) */
+  --color-bg-icon: rgb(231, 231, 249);
+
+
+  /* Typography */
+  --text-main: rgb(37, 37, 37);           /* Slate 50 (High contrast text) */
+  --text-muted: #565f6e;          /* Slate 400 (Secondary copy) */
+  --text-highlight: #2563eb;
+
+}
+
+/* Global Resets & Body Layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Amarante", serif;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Amarante", serif;
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(120,120,140,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120,120,140,0.08) 1px, transparent 1px);
+  background-size: 80px 80px, 80px 80px, cover;
+  scroll-behavior: smooth;
+}
+
+/* Reusable Layout Components */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 400px;
+}
+
+h2 {
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--text-muted);
+  font-family: 'Fraunces', serif;
+}
+
+/* 4. Interactive Buttons */
+.btn-primary {
+  display: inline-block;
+  border: none;
+  background-color: blue;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+.flex-ctr-sb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.highlight{
+    color: var(--text-highlight);
+}

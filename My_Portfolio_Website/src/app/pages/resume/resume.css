@@ -1,0 +1,187 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+    height: max-content;
+}
+
+.resume-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 4rem 0;
+
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--text-highlight);
+            border-radius: 10px;
+        }
+    }
+
+    .projects,
+    .education {
+        flex: 1;
+    }
+}
+
+
+/* PROJECTS */
+
+.project-item {
+    position: relative;
+    padding: 1.5rem 1.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        border-color: var(--text-highlight);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    }
+
+
+    h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem;
+    }
+
+
+    .duration {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: #777;
+        margin-bottom: 1rem;
+    }
+
+
+    .technologies,
+    .features {
+        margin-top: 1rem;
+        line-height: 1.7;
+        font-size: 0.95rem;
+    }
+
+
+    strong {
+        color: var(--text-highlight);
+    }
+
+
+    ul {
+        margin-top: 0.5rem;
+        padding-left: 1.2rem;
+
+        li {
+            margin-bottom: 0.4rem;
+
+            &::marker {
+                color: var(--text-highlight);
+            }
+        }
+    }
+}
+
+
+
+/* EDUCATION */
+
+.education-item {
+    position: relative;
+    padding: 1.5rem 1.8rem;
+    margin-bottom: 1.5rem;
+
+    border-left: 2px solid var(--text-highlight);
+    background: linear-gradient(
+        90deg,
+        rgba(100,100,100,0.08),
+        transparent
+    );
+
+    border-radius: 0 18px 18px 0;
+
+    transition: 0.3s ease;
+
+
+    &:hover {
+        transform: translateX(8px);
+    }
+
+
+    h3 {
+        font-size: 1.25rem;
+        margin-bottom: .4rem;
+    }
+
+
+    .duration {
+        font-size: .85rem;
+        color: #888;
+    }
+
+
+    .institution {
+        margin-top: .8rem;
+        font-weight: 600;
+        color: var(--text-highlight);
+    }
+
+
+    .details {
+
+        p {
+            margin-top: 1rem;
+            line-height: 1.7;
+        }
+
+
+        ul {
+            margin-top: 1rem;
+            padding-left: 1.2rem;
+
+            li {
+                margin-bottom: .5rem;
+                line-height: 1.5;
+
+                &::marker {
+                    color: var(--text-highlight);
+                }
+            }
+        }
+    }
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:1200px) {
+
+    .container {
+        width: 90%;
+    }
+
+}
+
+
+@media(max-width:850px) {
+
+    .resume-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+}
