@@ -1,6 +1,6 @@
 .what-you-get {
     width: 100%;
-    padding: clamp(4rem, 8vw, 7rem) 1rem;
+    padding: clamp(2rem, 4vw, 7rem) 1rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;

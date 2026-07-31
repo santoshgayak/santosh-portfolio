@@ -61,7 +61,7 @@
         .skill-item{
             flex: 1 1 240px;
             max-width: 240px;
-            padding: 2rem 4rem;
+            padding: 1rem 3rem;
             display: flex;
             align-items: center;
             flex-direction: column;

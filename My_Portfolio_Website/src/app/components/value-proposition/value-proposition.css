@@ -1,7 +1,7 @@
 .value-proposition{
     min-height:max-content;
     width: 100%;
-    padding: 100px 1rem;
+    padding: clamp(2rem, 4vw, 7rem) 1rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
