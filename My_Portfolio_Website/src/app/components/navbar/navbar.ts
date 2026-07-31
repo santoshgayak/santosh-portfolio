@@ -19,4 +19,7 @@ export class Navbar {
     this.showMenu = !this.showMenu;
     console.log('Clicked');
   }
+  closeMenu() {
+  this.showMenu = false;
+}
 }

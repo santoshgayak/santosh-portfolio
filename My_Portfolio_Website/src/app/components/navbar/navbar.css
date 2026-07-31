@@ -59,15 +59,12 @@
                 font-size: 1rem;
                 font-weight: 500;
             }
+            .download{
+                color:var(--text-highlight);
+            }
         }
 
 
-        button {
-            padding: 0.8rem 1.5rem;
-            min-width: max-content;
-            background-color: var(--text-highlight);
-            border-radius: 10px;
-        }
     }
 }
 
@@ -78,7 +75,7 @@
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        max-height:100vh;
+        max-height:90px;
         border-radius:0;
         margin-top:0;
         padding:1rem 0.5rem;
@@ -96,12 +93,17 @@
 
 
         ul {
+            position: absolute;
+            background-color: rgb(252, 253, 252);
+            top:70px;
+            left: 0;
             width:100%;
             flex-direction:column;
             gap:1.5rem;
             overflow:hidden;
+            border-bottom: 1px solid grey;
+            opacity: 0;
             transition:
-                max-height .4s ease,
                 opacity .3s ease,
                 transform .4s ease;
 
@@ -126,18 +128,18 @@
 
 
         ul.hide {
-            max-height:0;
             opacity:0;
-            transform:translateY(-20px);
+            transform: translateX(-400px);
             pointer-events:none;
+            padding:0;
         }
 
 
         ul.show {
-            max-height:600px;
             opacity:1;
             transform:translateY(0);
-            padding-top:2rem;
+            pointer-events:auto;
+          
         }
     }
 }

@@ -4,14 +4,11 @@
         <i [ngClass]="showMenu ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'" (click)="toggle()"></i>    
     </div>
 <ul class="flex-ctr-sb" [ngClass]="showMenu ? 'show' : 'hide'">
-        <li><a href="/" class="color-white">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#project">Projects</a></li>
-
-
-        <li><a routerLink="/resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <a class="btn-primary">Download Resume</a>
-
-    </ul>
+    <li><a href="/" class="color-white" (click)="closeMenu()">Home</a></li>
+    <li><a href="#about" (click)="closeMenu()">About</a></li>
+    <li><a href="#project" (click)="closeMenu()">Projects</a></li>
+    <li><a routerLink="/resume" (click)="closeMenu()">Resume</a></li>
+    <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+    <li><a class="download">Download Resume</a></li>
+</ul>
 </div>
