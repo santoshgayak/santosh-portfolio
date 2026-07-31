@@ -17,9 +17,10 @@
         align-items: center;
         gap: 1rem;
 
-        h3 {
+        a {
             margin: 0;
             color: white;
+            text-decoration: none;
             background: var(--text-main);
             padding: 0.5rem 0.8rem;
             border-radius: 8px;

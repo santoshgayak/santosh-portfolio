@@ -1,10 +1,10 @@
 <div class="navbar flex-ctr-sb">
     <div class="logo">
-        <h3>SG</h3>
+        <a href="#home" class="color-white" (click)="closeMenu()">SG</a>
         <i [ngClass]="showMenu ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'" (click)="toggle()"></i>    
     </div>
 <ul class="flex-ctr-sb" [ngClass]="showMenu ? 'show' : 'hide'">
-    <li><a href="/" class="color-white" (click)="closeMenu()">Home</a></li>
+    <li><a href="#home" class="color-white" (click)="closeMenu()">Home</a></li>
     <li><a href="#about" (click)="closeMenu()">About</a></li>
     <li><a href="#project" (click)="closeMenu()">Projects</a></li>
     <li><a routerLink="/resume" (click)="closeMenu()">Resume</a></li>

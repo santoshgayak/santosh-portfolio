@@ -4,6 +4,21 @@
     margin: 0 auto;
     height: max-content;
     position: relative;
+    a{
+        position:fixed;
+        right: clamp(1rem, 4vw, 4rem);
+        bottom: clamp(1rem, 4vw, 4rem);
+        color: white;
+        background-color: rgb(4, 43, 85);
+        padding: 1rem;
+        z-index: 111111;
+        border-radius: 50%;
+        animation: propagete 0.6s ease infinite;
+        &:hover{
+            background-color: rgb(3, 118, 232);
+        }
+
+    }
 }
 
 
@@ -12,4 +27,26 @@
         width: 100%;
     }
     
+}
+@keyframes propagete{
+    0%{
+        box-shadow: 0px 2px 10px grey;
+
+    }
+     25%{
+        box-shadow: 0px 2px 20px grey;
+
+    }
+    50%{
+        box-shadow: 0px 2px 30px grey;
+
+    }
+    75%{
+        box-shadow: 0px 2px 40px grey;
+
+    }
+    100%{
+        box-shadow: 0px 2px 50px grey;
+
+    }
 }
