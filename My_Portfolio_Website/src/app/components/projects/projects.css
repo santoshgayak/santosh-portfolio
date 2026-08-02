@@ -266,6 +266,9 @@ video.hide{
                     flex-direction: column;
                 }
             }
+            .stack-container{
+                width: 100%;
+            }
             .stack{
                 flex-wrap: nowrap;
                 p{
@@ -308,6 +311,8 @@ video.hide{
     .stack {
         justify-content: center;
         width: 100%;
+        margin-bottom: 1rem;
+
 
         p {
             width: 40%;
