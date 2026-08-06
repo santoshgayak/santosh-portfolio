@@ -1,15 +1,16 @@
 .work-process{
     min-height: max-content;
     width: 100%;
-    padding: 100px 1rem;
+    padding: 3rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     gap: 1.5rem;
     min-height: 400px;
-        background: linear-gradient(to right,#0B1224, #151B3B);
-
+    background: linear-gradient(to right,#0B1224, #151B3B);
+    margin-top: 5rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);        
 
     .left{
         width: 100%;

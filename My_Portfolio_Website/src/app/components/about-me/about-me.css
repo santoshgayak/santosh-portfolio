@@ -7,6 +7,7 @@
     gap: clamp(1rem, 2vw, 2rem);
     background-color: transparent;
     scroll-margin-top: 70px;
+    background-color: #eff6ff;
 
 
 .left {
@@ -18,7 +19,7 @@
 .image-container {
     position: relative;
     display: inline-block;
-    background-color: rgba(234, 217, 217, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 
     &::before {
         content: "";
@@ -113,7 +114,7 @@
         .stats-container{
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 1rem;
             width: 100%;
         }
@@ -123,13 +124,11 @@
             margin-top:1rem;
             display:flex;
             align-items:center;
+            justify-content: flex-start;
             gap:1rem;
             padding:0.8rem 1rem;
-            background:white;
-            border-radius:15px;
-            border:1px solid rgba(0,0,0,.08);
-            box-shadow:0 15px 35px rgba(0,0,0,.08);
-            width: 100%;
+            background:rgb(255, 255, 255,0.5);
+            width: max-content;
 
 
             .icon-container {
@@ -149,21 +148,18 @@
 
 
             .info {
-
-                span {
-                    color:var(--text-muted);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                p {
+                    color:var(--text-main);
                     font-size:.85rem;
                     text-transform:uppercase;
-                    font-weight:600;
+                    font-weight:800;
                 }
 
 
-                p {
-                    margin:.2rem 0 0;
-                    color:var(--text-main);
-                    font-size:1rem;
-                    font-weight:600;
-                }
             }
         }
     }
